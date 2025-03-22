@@ -29,7 +29,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         host = input("Enter the host IP Address\n:")
     else:
-        host = sys.argv[0]
+        host = sys.argv[1]
 
     connect(host)
        
