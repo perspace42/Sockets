@@ -13,5 +13,5 @@ while True:
     print("Connection accepted from " + repr(addr[1]))
 
     returnSock.send("Server approved connection\n".encode())
-    print(repr(addr[1]) + ": " + returnSock.recv(BUFFER))
+    print(f"{repr(addr[1])} : {returnSock.recv(BUFFER).decode()}")
     returnSock.close()
